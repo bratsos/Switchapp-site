@@ -1,0 +1,18 @@
+@import 'node_modules/normalize.css/normalize';
+@import './node_modules/slick-carousel/slick/slick.scss';
+@import 'mixins';
+@import 'colors';
+@import 'components'; 
+@import 'fonts';
+@import 'content';
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    width: 100%;
+    overflow-x: hidden;
+    background: #fafafa;
+}
+
+@import 'media768';

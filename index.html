@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Switch - Manage your favorite streamers</title>
+    <script>
+        function downloadJSAtOnload() {
+            var element = document.createElement("script");     
+            element.src = '/all.js'
+            document.body.appendChild(element);
+        }
+        if (window.addEventListener)
+            window.addEventListener("load", downloadJSAtOnload, false);
+        else if (window.attachEvent)
+            window.attachEvent("onload", downloadJSAtOnload);
+        else 
+            window.onload = downloadJSAtOnload;
+    </script>
+    <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-wrapper">
+              <a href="#0" class="logo"></a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li>
+                    <a class="download-btn" href="#0">
+                        Get it <span class="icon-windows8"></span>
+                    </a>
+                </li>
+                <li>
+                    <a class="bug-btn" href="#0">
+                       Report a bug <span class="icon-bug"></span>
+                    </a>
+                </li>
+                <li>
+                    <a class="feature-btn" href="#0">
+                      Request a feature <span class="icon-plus-square"></span>
+                    </a>
+                </li>
+                <li>
+                    <a class="contact-btn" href="#0">
+                        Contact us <span class="icon-paperplane"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+   <main>
+       <section class="hero-section">
+           <div class="hero-container">
+               <div class="hero-content-align">
+                    <h1>Manage your favorite streamers</h1>
+                    <div class="hero-btn-wrapper">
+                        <a href="#0" class="btn btn-info">Read more</a>
+                        <a href="#0" class="btn btn-success download-btn" target="_blank">Download <span class="icon-windows8"></span></a>
+                    </div>
+               </div>
+           </div>
+       </section>
+       <section class="intro-section">
+          <div class="text-intro">
+           <h1 class="title-text">Hello fellow gamer</h1>
+           <p class="disclaimer">This is not a commercial app that solves an actual problem or makes the world a better place. This is just an side/educational project of two developers.</p>
+           <p>You probably are a gamer. We are too. You probably wasted a lot of hours on Twitch.tv watching others playing your favorite game. But you don't enjoy every streamer the same right?</p>
+           <p>Well now you can organize your favorite streamers on an app and be notified when they go online, based on the rating you give them from 1 to 3.</p>
+          </div>
+          <div class="slider-intro">
+            <div class="slide lazyload" data-bg="assets/switchapp-login.PNG"></div>
+            <div class="slide lazyload" data-bg="./assets/switchapp-addstreamer.PNG"></div>
+            <div class="slide lazyload" data-bg="./assets/switchapp-editstreamers.PNG"></div>
+          </div>
+       </section>
+       <section class="contact-section">
+         <div class="contact-intro">
+           <h1 class="title-text">Contact us</h1>
+                      
+         </div>
+         <div class="developers-wrapper">
+            <div class="developer">
+              <h2>Alex Bratsos</h2>
+              <h3>Front end developer</h3>
+              <div class="social-wrapper">
+                <a href="https://bratsos.com" target="_blank">
+                  <span class="icon-globe"></span>
+                  <p>www</p>
+                </a>
+                <a href="https://github.com/bratsos" target="_blank">
+                  <span class="icon-github"></span>
+                  <p>Github</p>
+                </a>
+                <a href="https://twitter.com/bratsos" target="_blank">
+                  <span class="icon-twitter"></span>
+                  <p>Twitter</p>
+                </a>
+                
+              </div>
+            </div>
+            <div class="developer">
+              <h2>Dimitris Giannaris</h2>
+              <h3>Backend developer</h3>
+              <div class="social-wrapper">
+                <a href="https://github.com/DGiannaris" target="_blank">
+                  <span class="icon-github"></span>
+                  <p>Github</p>
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                  <span class="icon-twitter"></span>
+                  <p>Twitter</p>
+                </a>
+                
+              </div>
+            </div>
+           
+         </div>
+       </section>
+       <footer class="footer">
+          <div class="btn btn-info older-versions-btn">Check older versions</div>
+       </footer>
+   </main>
+   <div class="modal">
+      <div class="close-btn">
+        <span></span>
+        <span></span>
+      </div>
+      <div class="changelog">
+        <h1>Changelog</h1>
+        <div class="versions-wrapper">          
+        </div>
+      </div>
+      <div class="bug-report-wrapper">
+          <div class="bug-report-content">
+            <h1>Bug report</h1>
+            <p>So you've found a bug. That's embarrassing. Would you mind sharing some info?</p>
+            <form action="void()">
+              <label for="bug-title">Title</label>
+              <input type="text" id="bug-title" placeholder="The title. Like 'This is the best bug ever!'">
+              <label for="bug-body">Details</label>
+              <textarea id="bug-body" cols="40" rows="5" placeholder="What happened?"></textarea>
+
+              <button class="submit-bug btn-primary btn">
+                Kill that bug <span class="icon-bug">
+              </button>
+              
+            </form>
+            
+          </div>
+      </div>
+      <div class="feature-request-wrapper">
+          <div class="feature-request-content">
+            <h1>Feature Request</h1>
+            <p>We're always trying to improve our app. If you have a specific request, you should really tell us about it.</p>
+            <form action="void()">
+              <label for="feature-title">Title</label>
+              <input type="text" id="feature-title" placeholder="The title. Like 'This is the best feature ever!'">
+              <label for="feature-body">Details</label>
+              <textarea id="feature-body" cols="40" rows="5" placeholder="Go crazy."></textarea>
+
+              <button class="submit-feature btn-primary btn">
+                Add that please <span class="icon-plus-square">
+              </button>
+              
+            </form>
+            
+          </div>
+      </div>
+   </div>
+   <div class="notification-message">
+      <div class="text-placeholder"></div>
+     <span class="icon-check-circle"></span>
+     <span class="icon-info"></span>
+     <span class="icon-x-circle"></span>
+   </div>
+    <script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.12'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+@media screen and (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.62);
+        position: relative;
+    }
+
+    .menu {
+        font-size: 12px;
+    }
+
+    .menu li span {
+        display: none;
+    }
+
+    .logo-wrapper {
+    }
+
+    a.logo {
+        width: 100px;
+        height: 50px;
+        margin: 0 auto;
+        right: auto;
+    }
+
+    .hero-content-align h1 {
+        background: rgba(0, 0, 0, 0.4);
+        padding: 1em;
+        box-sizing: border-box;
+        color: white;
+    }
+
+    .intro-section > div {
+        min-width: 250px;
+        width: 100%;
+        padding: 0 1.5em;
+    }
+
+    .intro-section {
+        flex-wrap: wrap;
+    }
+
+    .developers-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .developer {
+        min-width: 250px;
+        width: 100%;
+        border-bottom: 10px solid #fafafa;
+    }
+
+    .modal {
+        font-size: 12px;
+    }
+
+    .bug-report-content, .feature-request-content {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+    .btn {
+        padding: 10px 15px;
+    }
+    
+}

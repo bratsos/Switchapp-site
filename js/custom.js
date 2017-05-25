@@ -105,7 +105,7 @@ $(function() {
 
 
     $closeModal.click(function() {
-        $body.removeClass('open feature-request bug-report')
+        $body.removeClass('open feature-request bug-report older-versions')
     })
 
     
